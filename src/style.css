@@ -1,3 +1,34 @@
-.hello {
-    color: red
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .banner {
+    background: url('./banner.jpg');
+} */
+
+.banner img {
+    height: auto;
+    width: 700px;
+}
+.menu {
+    color: black;
+    background-color: yellow;
+    list-style-type: none;
+}
+
+
+/* skeleton */
+
+#buttonDiv {
+    display: flex;
+
+}
+
+.button {
+    flex-grow: 1;
+    width: auto;
+    background-color: black;
+    color: white
 }
