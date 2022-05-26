@@ -16,7 +16,7 @@ export function createContact() {
     const email = document.createElement("p");
     email.classList.add("contact");
     email.id = "email";
-    email.textContent = "email: babyblue@polloshermanos.com";
+    email.textContent = "email: babyblue@madrigalelectromotive.com";
     content.appendChild(email);
   }
   

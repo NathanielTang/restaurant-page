@@ -8,6 +8,7 @@ function createMenuItem(item, cost) {
 const createMenu = () => {
     const menuList = document.createElement('ol');
     menuList.classList.add('menu')
+    content.appendChild(menuList)
 
     let menuItems = [];
 
@@ -18,12 +19,13 @@ const createMenu = () => {
     const chickenThree = createMenuItem('Signature Fried Chicken - 12pcs', '13.99')
     
     menuItems.push(egg, omelette, chickenOne, chickenTwo, chickenThree)
-    console.log(egg)
-    // const menuItem = document.createElement('li')
-    // menuItem.classList.add('menu')
-    // console.log('hello menu')
-    // menuItem.textContent = "2 pcs Fried Chicken"
-    // content.appendChild(menuItem)
+    console.log(menuItems[1].item)
+    menuItems.forEach(element => {
+        const menuItem = document.createElement('li')
+        menuItem.textContent = `${element.item} ... ${element.cost}`
+        menuList.appendChild(menuItem)
+        
+    })
 
 }
 

@@ -1,7 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* .banner {
@@ -10,7 +17,15 @@
 
 .banner img {
     height: auto;
-    width: 700px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .menu {
     color: black;
@@ -23,12 +38,14 @@
 
 #buttonDiv {
     display: flex;
-
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {
     flex-grow: 1;
     width: auto;
     background-color: black;
-    color: white
+    color: white;
 }
